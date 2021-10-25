@@ -37,14 +37,19 @@ const teams = [
 
 ]
 
+let nuovo_array = []
+let nuovo_object = {}
 for (let i = 0; i < teams.length; i++) {
     const team = teams[i];
     team.punti_fatti = Math.floor(Math.random() * 100)
     team.falli_subiti = Math.floor(Math.random() * 100)
+
+    const { nome, falli_subiti } = teams[i];
+    nuovo_object = { nome, falli_subiti }
+    nuovo_array.push(nuovo_object)
 }
 
-console.log(teams);
-
+console.log(nuovo_array);
 
 
 
