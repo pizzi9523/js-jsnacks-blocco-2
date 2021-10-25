@@ -28,7 +28,16 @@ const teams = [
         punti_fatti: 0,
         falli_subiti: 0
     },
+
+    {
+        nome: "Lazio",
+        punti_fatti: 0,
+        falli_subiti: 0
+    }
+
 ]
+
+console.log(teams);
 
 
 
