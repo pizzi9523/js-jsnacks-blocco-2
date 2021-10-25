@@ -37,8 +37,13 @@ const teams = [
 
 ]
 
-console.log(teams);
+for (let i = 0; i < teams.length; i++) {
+    const team = teams[i];
+    team.punti_fatti = Math.floor(Math.random() * 4)
+    team.falli_subiti = Math.floor(Math.random() * 100)
+}
 
+console.log(teams);
 
 
 
